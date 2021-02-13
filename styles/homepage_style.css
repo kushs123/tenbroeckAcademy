@@ -10,6 +10,9 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
 }
+p{
+    font-size: small;
+}
 /* ----------------------------- nav bar -------------------------------*/
 .navbar_header{
     display: flex;
@@ -73,12 +76,29 @@ div>h1{
     color: white;
 }
 .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     bottom: 1%;
     top: 28%;
     left: 36%;
 }
-.banner>a{
+.coming_soon{
+    position:absolute;
+    align-items: center;
+    margin-left: -70px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    width: 130px;
+    line-height: 35px;
+    background-color: rgb(41, 180, 41);
+    border-radius: 6px;
+}
+/* .banner>a{
     position:absolute;
     bottom: 43%;
     top: 47%;
@@ -92,7 +112,7 @@ div>h1{
     line-height: 35px;
     background-color: rgb(41, 180, 41);
     border-radius: 6px;
-}
+} */
 /* .image-3{
     width: 100px;
     height: 189.1px;
@@ -285,7 +305,7 @@ main{
     margin-top: 50px;
 }
 .bottom_content>div>img{
-    margin-top: 40px;
+    margin-top: 7.5px;
     height: 200px;
 }
 .description>p{
@@ -315,7 +335,7 @@ main{
 .facilties_grid{
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    margin-top: 40px;
     width: 80%;
     margin-right: 130px;
     margin-left: 150px;
@@ -351,7 +371,7 @@ main{
     border-radius: 5px;
     margin-top: 20px;
     padding-right: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .grid-2{
     box-sizing: border-box;
