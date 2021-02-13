@@ -7,6 +7,7 @@ body{
     font-size: 16px;
     color: tomato;
     margin: 0;
+    font-family: 'Poppins', sans-serif;
     padding: 0;
 }
 /* ----------------------------- nav bar -------------------------------*/
@@ -81,7 +82,7 @@ div>h1{
     position:absolute;
     bottom: 43%;
     top: 47%;
-    left: 45%;
+    left: 47%;
     margin-top: 20px;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -89,7 +90,7 @@ div>h1{
     text-align: center;
     width: 130px;
     line-height: 35px;
-    background-color: rgb(116, 226, 140);
+    background-color: rgb(41, 180, 41);
     border-radius: 6px;
 }
 /* .image-3{
@@ -97,7 +98,7 @@ div>h1{
     height: 189.1px;
 } */
 .image_tray{
-    margin-top: -4px;
+    margin-top: -6px;
     display: flexbox;
     display: flex;
     width: 100%;
@@ -113,11 +114,25 @@ div>h1{
     float: right;
     width: 301.5px;
 } */
-.image_discription>p{
+/* .image_discription>h6{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.80s;
+} */
+.image_discription>h3{
+    color: rgb(86, 209, 86);
+}
+.image_discription{
     position: relative;
     display: block;
-    text-align: justify;
-    text-justify: inter-word;
+    padding-left: 10px;
+    padding-right: 10px;
     top: 0;
     left: 0;
     width: 100%;
@@ -126,13 +141,17 @@ div>h1{
     color: whitesmoke;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    padding-left: 1px;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.80s;
+    transition: opacity 0.25s;
 }
-.image_discription>p:hover{
+.image_discription:hover{
     opacity: 1;
+    box-shadow: 0 0 0 1pt rgb(48, 255, 76);
+    padding-right: 10px;
 }
 .image{
     position: absolute;
@@ -170,21 +189,19 @@ main{
 .fist_main_div{
     margin-top: 50px;
     display: flex;
-    justify-content: space-around;
     margin-right: 200px;
     margin-left: 300px;
-    width: 66%;
     margin-bottom: 50px;
 
 }
 .welcome{
     display: flex;
     flex-direction: column;
-
 }
 .img>img{
+    margin-top: 40px;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .abc>h1{
     color: rgb(128, 15, 15);
@@ -192,7 +209,7 @@ main{
     text-align: left;
 }
 .abc>h4{
-    color: rgb(177, 46, 46);
+    color: rgb(128, 15, 15);
     text-align: left;
 }
 .abcd>p{
@@ -207,6 +224,7 @@ main{
     color: rgb(128, 15, 15);
 }
 .curriculum>div>h4{
+    color: rgb(128, 15, 15);;
     text-align: center;
 }
 .h_links{
@@ -214,32 +232,52 @@ main{
     justify-content: center;
     margin-top: 40px;
 }
-.h_links>a{
+/* .h_links>a{
     text-decoration: none;
     padding-right: 70px;
     padding-left: 50px;
     padding-top: 20px;
-}
-.h_links>a>span{
-    margin-left: -10px;
-}
+} */
+
 #non_active{
     display: block;
-    width: 300px;
-    margin-top: -10px;
-    border-radius: 6px;
-    border-color: rgb(0, 0, 0);
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    margin-left: 50px;
+    line-height: 40px;
+    text-decoration: none;
+    box-shadow: 0 0 0 1pt rgb(75, 190, 100);
+    border-radius: 10px;
+    color: rgb(5, 104, 5);
+    font-weight: bold
+}
+#non_active:hover{
+    opacity: 1;
+    color: white;
+    background-color: rgb(75, 190, 100);;
+    transition: 0.25s;
 }
 #active{
     overflow: hidden;
+    display: inline-block;
     display: block;    
-    color: whitesmoke;
+    color: rgb(5, 104, 5);
     text-align: center;
-    height: 40px;
-    width: 300px;
-    line-height: 3px;
-    background-color: rgb(116, 226, 140);
-    border-radius: 6px;
+    line-height: 40px;
+    height: 42px;
+    text-decoration: none;
+    width: 200px;
+    box-shadow: 0 0 0 1pt rgb(75, 190, 100);
+    font-weight: bold;
+    border-radius: 10px;
+}
+#active:hover{
+    opacity: 1;
+    color: white;
+    background-color: rgb(75, 190, 100);;
+    transition: 0.25s;
 }
 .bottom_content{
     margin-left: 300px;
@@ -247,6 +285,7 @@ main{
     margin-top: 50px;
 }
 .bottom_content>div>img{
+    margin-top: 40px;
     height: 200px;
 }
 .description>p{
@@ -263,6 +302,7 @@ main{
     margin-top: 50px;
 }
 .facilities>div>h4{
+    color: rgb(128, 15, 15);;
     text-align: center;
 }
 .facilities>div>h1{
@@ -276,9 +316,9 @@ main{
     display: flex;
     flex-direction: row;
     margin-top: 80px;
-    width: 75%;
-    margin-right: 180px;
-    margin-left: 180px;
+    width: 80%;
+    margin-right: 130px;
+    margin-left: 150px;
 }
 /* #desc{
     color: black;
@@ -302,14 +342,13 @@ main{
 .grid_image{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 .grid-1{
     box-sizing: border-box;
     background: rgb(240, 239, 239);
     display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-top: 20px;
     padding-right: 10px;
     margin-bottom: 30px;
@@ -318,36 +357,31 @@ main{
     box-sizing: border-box;
     background: rgb(240, 239, 239);
     display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-    margin-top: 23px;
-    margin-left: 10px;
-    text-align: justify;
-    text-justify: inter-word;
+    border-radius: 5px;
+    margin-top: 22px;
+    margin-left: 20px;
 }
 .grid_image-1{
-    width: 62px;
-    height: 62px;
-    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    margin-top: -0.5px;
+    border-radius: 5px;
     display: block;    
 }
 .grid-3{
     box-sizing: border-box;
     background: rgb(240, 239, 239);
     display: flex;
-    justify-content: space-around;
-    border-radius: 20px;  
-    margin-top: 20px;
-    margin-left: 10px;   
-    text-align: justify;
-    text-justify: inter-word; 
+    border-radius: 5px;  
+    margin-top: 22px;
+    margin-left: 20px; 
 }
 #desc{
-    text-align: justify;
-    text-justify: inter-word;
+    margin-top: -8px;
     padding-left: 10px;
     padding-right: 10px;
     color: black;
+    font-size: small;
 }
 
 .first_column{
@@ -355,14 +389,13 @@ main{
     display: flex;
     margin-left: 10px;
     flex-direction: column;
-    justify-content: space-around;
 }
 .second_column{   
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-left: 10px;    
-    justify-content: space-around;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .thrid_column{
     margin-left: 300px;
