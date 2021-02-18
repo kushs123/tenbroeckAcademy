@@ -260,7 +260,7 @@ main{
     display: flex;
     flex-direction: column;
 }
-.abc>h1{
+.abc>h2{
     color: rgba(151, 30, 30, 0.781);
     float: left;
     text-align: left;
@@ -268,7 +268,7 @@ main{
     font-size: 45px;
     font-family: 'Lato', sans-serif;
 }
-.abc>h4{
+.abc>h3{
     color: rgba(151, 30, 30, 0.781);
     text-align: left;
     font-weight: bold;
@@ -283,13 +283,14 @@ main{
     font-size: small;
 }
 
-.curriculum>div>h1{
+.curriculum>div>h2{
     color: rgba(151, 30, 30, 0.781);
     font-size: 45px;
     margin-top: -10px;
+    text-align: center;
     font-family: 'Lato', sans-serif;
 }
-.curriculum>div>h4{
+.curriculum>div>h3{
     margin-top: 30px;
     color: rgba(151, 30, 30, 0.781);
     text-align: center;
@@ -380,13 +381,13 @@ main{
     justify-content: center;
     margin-top: 50px;
 }
-.facilities>div>h4{
+.facilities>div>h3{
     color: rgba(151, 30, 30, 0.781);
     text-align: center;
     font-size: 25px;
     font-weight: lighter;
 }
-.facilities>div>h1{
+.facilities>div>h2{
     color: rgba(151, 30, 30, 0.781);
     font-size: 45px;
     margin-top: -1px;
@@ -537,26 +538,56 @@ footer{
 .address>i{
     padding-top: 6px;
     color: black;
+    opacity: 0.9;
 }
 .address>i>span{
     padding-left: 8px;    
     font-size: small;
-    font-weight: 80px;
-    color: black;
+    font-weight: lighter;
+    color: #333333;
 }
 
 
+@keyframes slider {
+    8.33%{
+        margin-left: -100%;
+    }
+    16.66%{
+        margin-left: -100%;
+    }
+    24.99%{
+        margin-left: -200%;
+    }
+    33.32%{
+        margin-left: -200%;
+    }
+    41.65%{
+        margin-left: -300%;
+    }
+    49.98%{
+        margin-left: -300%;
+    }
+    58.31%{
+        margin-left: -400%;
+    }
+    66.64%{
+        margin-left: -400%;
+    }
+    74.97%{
+        margin-left: -500%;
+    }
+    83.30%{
+        margin-left: -500%;
+    }
+    91.63%{
+        margin-left: -600%;
+    }
+    100%{
+        margin-left: -600%;
+    }
+}
 
-
-@media screen and (max-width: 768px) {
-    @keyframes fade{
-        from{
-          opacity:0.4;
-        }
-        to{
-          opacity:1;
-        }
-      }
+@media screen and (max-width:838px) {
     body{
         font-size: 16px;
         margin: 0;
@@ -582,41 +613,34 @@ footer{
         width: 100%;
     }
     .image_tray{
-        /* width: 70%;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-        height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        overflow: hidden;
-        outline: 5px solid black; */
+        width: 600%;
+        height: 250px;
+        animation: slider infinite 20s 1s;
+
     }
     /* .main{
         position: relative;
     } */
-    .image_overlay{
-        /* width: 550px;
-        max-width: 550px;
-        height: 350px;
-        display: flex; */
-        /* width: 100%;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+    .main{
         overflow: hidden;
-        outline: 5px solid black; */
-        /* position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0; */
+    }
+    .image_overlay{
+        width: 60%;
+        float: left;
+        overflow: hidden;
+    }
+    #desc{
+        color: black;
+        font-size: small;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+    }
+    .abcd>div>p{
+        color: black;
+        float: left;
+        font-family: 'Lato', sans-serif;
     }
     /* .image_overlay>img{
         width: 550px;
@@ -626,7 +650,7 @@ footer{
         width:100%;
         height: 100%;
     } */
-    .image_tray{
+    /* .image_tray{
         visibility: hidden;
         display: none;
         height: 0%;
@@ -634,7 +658,8 @@ footer{
     .image_overlay{
         height: 0%;
         visibility: hidden;
-    }
+    } */
+    
     .welcome{
         align-items: center;
         margin-top: 40px;
@@ -644,10 +669,10 @@ footer{
         width: 100%;
         align-items: center;
     }
-    .abc>h4{
+    .abc>h3{
         text-align: center;
     }
-    .abc>h1{
+    .abc>h2{
         text-align: center;
     }
     .img{
@@ -686,13 +711,15 @@ footer{
     /* .company_logo{
         width: 10%;
     } */
+    .abcd>div>p{
+        color: black;
+        float: left;
+    }
     .company_logo>img{
         width: 150px;
     }
     .links{
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
     .links .for_admission{
         font-size: small;
@@ -713,6 +740,70 @@ footer{
     }
     .text>div>p{
         font-size: small;
+    }
+    .follow_us{
+        margin-top: 30px;
+    }
+    .address{
+        margin-top: 30px;
+    }
+    .follow_us{
+        margin-top: 30px;
+    }
+    footer{
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .mail_info{
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        float: left;
+        left: 0%;
+    }
+    .follow_us>div>span{
+        text-align: center;
+        margin-left: 52px;
+        font-size: 13px;
+    }
+    .follow_us{
+        position: absolute;
+        display: block;
+        top: 1%;
+        width: 50%;
+        left: 50%;
+        float: right;
+        right: 0%;
+    }
+    .follow_us i{
+        margin-top: -2px;
+        display: inline-block;
+        font-size: medium;
+        margin-left: 10px;
+        opacity: 1;
+    }
+    .address{
+        position: absolute;
+        top: 55%;
+        width: 50%;
+        left: 50%;
+        float: right;
+        display: block;
+        right: 0%;
+    }
+    .address>i{
+        font-size: medium;
+    }
+    .address>i>span{
+        display: block;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-top: -13px;
+    }
+    .mail_info>img{
+        height: 70%;
+        width: 70%;
     }
 }
 
@@ -735,6 +826,36 @@ footer{
         justify-content: space-around;
         align-items: center;
         margin-bottom: 50px;
+    }
+    #desc{
+        color: black;
+        font-size: small;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
+        font-family: 'Lato', sans-serif;
+    }
+    .image_tray{
+        width: 600%;
+        height: 100px;
+        animation: slider infinite 20s 1s;
+    }
+    /* .main{
+        position: relative;
+    } */
+    .main{
+        overflow: hidden;
+    }
+    .image_overlay{
+        width: 60%;
+        float: left;
+        overflow: hidden;
+    }
+    .abcd>div>p{
+        color: black;
+        float: left;
+        text-justify: none;
+        font-family: 'Lato', sans-serif;
     }
     .text>div>h1{
         font-size: small;
@@ -812,6 +933,7 @@ footer{
     /* .company_logo{
         width: 10%;
     } */
+
     .company_logo>img{
         width: 150px;
     }
@@ -833,13 +955,64 @@ footer{
         width: 80px;
         font-size: xx-small;
     }
-    .image_tray{
-        visibility: hidden;
-        display: none;
-        height: 0%;
+    .follow_us{
+        margin-top: 30px;
     }
-    .image_overlay{
-        height: 0%;
-        visibility: hidden;
+    footer{
+        position: relative;
+        width: 100%;
+        height: 150px;
+    }
+    .mail_info{
+        position: absolute;
+        top: 35%;
+        width: 50%;
+        float: left;
+        left: 0%;
+    }
+    .follow_us>div>span{
+        text-align: center;
+        margin-left: 52px;
+        font-size: 13px;
+    }
+    .follow_us{
+        position: absolute;
+        display: block;
+        top: 1%;
+        width: 50%;
+        left: 50%;
+        float: right;
+        right: 0%;
+    }
+    .follow_us i{
+        margin-top: -2px;
+        display: inline-block;
+        margin-left: 10px;
+        opacity: 1;
+    }
+    .address{
+        position: absolute;
+        top: 55%;
+        width: 50%;
+        left: 50%;
+        float: right;
+        display: block;
+        right: 0%;
+    }
+    .address>i{
+        font-size: medium;
+    }
+    .address>i>span{
+        display: block;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-top: -13px;
+    }
+    .mail_info>img{
+        height: 70%;
+        width: 70%;
+    }
+    .mail_info>span{
+        margin-left: 10%;
     }
 }
