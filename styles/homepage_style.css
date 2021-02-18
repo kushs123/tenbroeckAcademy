@@ -66,7 +66,7 @@ nav{
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3));
     display: inline-block;
     width: 100%;
-    height: auto;
+    height: 100%;
     padding-bottom: 0%;
 }
 .banner{
@@ -85,7 +85,6 @@ div>h1{
     color: whitesmoke;
     font-weight: 1000;
     font-size: 48px;
-    font-size: auto;
 }
 .content{
     color: white;
@@ -530,7 +529,6 @@ footer{
     margin-top: 28px;
 }
 .address{
-    margin-right: 100px;
     margin-top: 28px;
 }
 .address>i{
@@ -542,4 +540,303 @@ footer{
     font-size: small;
     font-weight: 80px;
     color: black;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    @keyframes fade{
+        from{
+          opacity:0.4;
+        }
+        to{
+          opacity:1;
+        }
+      }
+    body{
+        font-size: 16px;
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+    }
+    .navbar_header{
+        width: 100%;
+    }
+    .facilties_grid{
+        flex-direction: column;
+    }
+    .grid-2{
+        margin-left: 0%;
+    }
+    .grid-3{
+        margin-left: 0%;
+    }
+    .img{
+        width: 60%;
+    }
+    header{
+        width: 100%;
+    }
+    .image_tray{
+        /* width: 70%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        outline: 5px solid black; */
+    }
+    /* .main{
+        position: relative;
+    } */
+    .image_overlay{
+        /* width: 550px;
+        max-width: 550px;
+        height: 350px;
+        display: flex; */
+        /* width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+        outline: 5px solid black; */
+        /* position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0; */
+    }
+    /* .image_overlay>img{
+        width: 550px;
+        max-width: 550px;
+        height: 350px;
+        display: flex;
+        width:100%;
+        height: 100%;
+    } */
+    .image_tray{
+        visibility: hidden;
+        display: none;
+        height: 0%;
+    }
+    .image_overlay{
+        height: 0%;
+        visibility: hidden;
+    }
+    .welcome{
+        align-items: center;
+        margin-top: 40px;
+    }
+    .bottom_content{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .abc>h4{
+        text-align: center;
+    }
+    .abc>h1{
+        text-align: center;
+    }
+    .img{
+        align-items: center;
+        margin-left: 50px;
+    }
+    .fist_main_div{
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .coming_soon{
+        margin-top: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: small;
+        text-align: center;
+        width: 100px;
+        line-height: 25px;
+        background-color: rgb(118, 207, 95);
+        border-radius: 5px;
+    }
+    /* .company_logo{
+        width: 10%;
+    } */
+    .company_logo>img{
+        width: 150px;
+    }
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .links .for_admission{
+        font-size: small;
+        font-weight: bold;
+    }
+    .links .call{
+        width: 100px;
+        margin-left: -30px;
+    }
+    .links .call_us{
+        height: 25px;
+        width: 100px;
+        line-height: 25px;
+        font-size: small;
+    }
+    .text>div>h1{
+        font-size: x-large;
+    }
+    .text>div>p{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 500px){
+    body{
+        width: 100%;
+        font-size: xx-small;
+    }
+    nav{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+        left:0;
+        right:0;
+        margin-left:auto;
+        margin-right:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .text>div>h1{
+        font-size: small;
+    }
+    .text>div>p{
+        font-size: xx-small;
+    }
+    .second_column{
+        margin-top: 1%;
+    }
+    .grid-2{
+        margin-left: 0%;
+    }
+    .grid-3{
+        margin-left: 0%;
+    }
+    .grid_image{
+        width: 100%;
+        height: 100%;
+    }
+    .grid_image-1{
+        height: 100%;
+
+    }
+    .mail_info>img{
+        width: 100%;
+        height: 100%;
+    }
+    .mail_info>span{
+        font-size: xx-small;
+        color: black;
+    }
+    .address{
+        margin-top: 28px;
+    }
+    .h_links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
+    #non_active{
+        margin-left: none;
+        margin-top: 10px;
+        margin-left: -1px;
+    }
+    .follow_us>div>span{
+        margin-left: 30%;
+        font-size: xx-small;
+    }
+    .mail_info>span{
+        font-size: xx-small;
+        font-weight: 80px;
+        color: black;
+    }
+    .address>i>span{
+        padding-left: 8px;    
+        font-size: xx-small;
+        font-weight: 80px;
+        color: black;
+    }
+    .coming_soon{
+        margin-top: 10px;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        display: block;
+        font-size: xx-small;
+        text-align: center;
+        width: 70px;
+        line-height: 18px;
+        background-color: rgb(118, 207, 95);
+        border-radius: 5px;
+    }
+    /* .company_logo{
+        width: 10%;
+    } */
+    .company_logo>img{
+        width: 150px;
+    }
+    .links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .links .for_admission{
+        font-size: xx-small;
+        font-weight: bold;
+    }
+    .links .call{
+        width: 100px;
+        margin-left: -10px;
+    }
+    .links .call_us{
+        height: 25px;
+        width: 80px;
+        font-size: xx-small;
+    }
+    .image_tray{
+        visibility: hidden;
+        display: none;
+        height: 0%;
+    }
+    .image_overlay{
+        height: 0%;
+        visibility: hidden;
+    }
 }
