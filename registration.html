@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Registration Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/form.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- <script src="" async defer></script> -->
+        <div class="main">
+            <div class="box">
+                <div class="image">
+                    <img src="./images/form image .jpg" alt="">
+                </div>
+                <div class="form">
+                    <div class="inform">
+                        <h1>Admission Enquiry Form</h1>
+                        <div class="enquiry">
+                            <form>
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="lname" style="display: inline-block; margin-top: 10px;">Email Address:</label><br>
+                                <input type="text" id="fname" name="lname">
+                                <div class="mobno">
+                                    <div>
+                                        <label for="lname">Phone No:</label><br>
+                                        <input type="text" id="fname" name="lname">
+                                    </div>
+                                    <div>
+                                        <label for="lname">Select Class:</label><br>
+                                        <select name="class_name" id="fname">
+                                            <option value="Class 1" style="width: 100%;">Class 1</option>
+                                            <option value="Class 2">Class 2</option>
+                                            <option value="Class 3">Class 3</option>
+                                            <option value="Class 4">Class 4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <label for="lname" style="display: inline-block; margin-top: 10px;">Query(optional)</label><br>
+                                <textarea name="optional" id="fname" cols="30" rows="10" style="height: 150px;"></textarea>
+                                <span>Max 80 characters</span>
+                            </form>                            
+                        </div>
+                        <button type="submit" form="form1" value="Submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
