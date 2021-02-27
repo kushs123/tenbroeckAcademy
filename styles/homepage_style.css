@@ -6,13 +6,14 @@
     box-sizing:border-box; 
 }
 body{
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 17px;
     margin: 0;
     font-family: 'Lato', sans-serif;
     padding: 0;
 }
 p{
-    font-size: small;
+    font-size: 21;
 }
 /* ----------------------------- nav bar -------------------------------*/
 nav{
@@ -44,10 +45,11 @@ nav{
    text-decoration: none;
    color: rgba(151, 30, 30, 0.781);;
    font-size: 14px;
-   font-weight: bolder;
+   font-weight: bold;
 }
 .for_admission>span{
     margin-left: 10px;
+    font-weight: bold;
 }
 .links .call_us{
     text-align: center;
@@ -71,7 +73,7 @@ nav{
 }
 
 .banner_image{
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+    /* background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)); */
     display: inline-block;
     width: 100%;
     height: 100%;
@@ -91,8 +93,8 @@ nav{
     width: 100%;
     padding-top: 10px;
     text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
 }
 .text>div>h1{
     text-align: center;
@@ -102,11 +104,11 @@ nav{
     margin-right: auto;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 64px; 
+    font-size: 50px; 
     width: 60%;
     color: whitesmoke;
-    font-weight: bold;
-    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 45px;
 }
 .content{
     color: white;
@@ -129,12 +131,12 @@ nav{
     right:0;
     margin-left:auto;
     margin-right:auto;
-    bottom: 1%;
+    margin-bottom: 10px;
     top: 25%;
     height: 20%;
 }
 .coming_soon{
-    margin-top: 20px;
+    margin-top: 50px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: block;
@@ -142,9 +144,12 @@ nav{
     width: 150px;
     line-height: 40px;
     background-color: rgb(118, 207, 95);
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
+    border: none;
     animation: 2s ease-in-out;
+    font-weight: 500;
+    font-size: 18px;
 }
 /* .banner>a{
     position:absolute;
@@ -283,14 +288,16 @@ main{
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 80%;
 }
 .img{
-    width: 35%;
+    width: 40%;
 }
 .img>img{
-    margin-top: 5px;
+    margin-top: 75px;
+    margin-left: 30px;
     width: 100%;
-    height: 100%;
+    height: 80%;
 }
 .abcd{
     display: flex;
@@ -300,29 +307,26 @@ main{
     color: rgba(151, 30, 30, 0.781);
     float: left;
     text-align: left;
-    font-weight: bolder;
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
+    font-size: 52px;
+    font-family: 'Poppins', sans-serif;
 }
 .abc>h3{
     color: rgba(151, 30, 30, 0.781);
     text-align: left;
-    font-weight: bold;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 29px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 .abcd>div>p{
     color: black;
     float: left;
-    font-size: small;
 }
 .container {
     border: 1px solid  rgba(0,0,0,0.2);;
     /* padding: 10px ; */
     padding-top: 5px;
     margin-top: -5px;
-    height: max-content;
-    font-size: 12px;
+    height: max-content;;
     /* height: 40%; */
     height: 40%;
     
@@ -344,37 +348,39 @@ main{
    }
    .set_as_part>h2{
     color: rgba(151, 30, 30, 0.781);
-    font-size: 40px !important;
+    font-size: 52px !important;
     margin-left: 16%;
     font-weight: 700;
     margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
    }
    .set_as_part>h3{
     color: rgba(151, 30, 30, 0.781);
     margin-left: 16%;
-    font-size: 25px;
+    font-size: 29px;
     font-weight: 500 !important;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
    
 }
 .container>p{
     padding: 10px;
     font-family: 'Lato', sans-serif;
-    
+    text-align: center;
 }
 
 .curriculum>div>h2{
     color: white;
-    font-size: 40px;
+    font-size: 52px;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .curriculum>div>h3{
     margin-top: 30px;
     color: white;
     text-align: center;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 29px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 /* .h_links{
     display: flex;
@@ -469,15 +475,15 @@ main{
 .facilities>div>h3{
     color: rgba(151, 30, 30, 0.781);
     text-align: center;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 29px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 .facilities>div>h2{
     color: rgba(151, 30, 30, 0.781);
-    font-size: 40px;
+    font-size: 52px;
     margin-top: -1px;
-    font-weight: 1200;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 /* ----------------------------- main -------------------------------*/
 
@@ -552,9 +558,7 @@ main{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 15px;
-    font-size: 12px;
-    text-align: justify;
-    text-justify: inter-word;
+    font-size: 16px;
 }
 
 .first_column{
@@ -570,7 +574,6 @@ main{
     flex-direction: column;
 }
 .above_footer>img{
-    padding-left: 2px;
     padding-right: 2px;
     margin-top: 80px;
     width: 100%;
