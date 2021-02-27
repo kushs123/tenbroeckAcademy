@@ -1316,6 +1316,25 @@ form{
 }
 
 @media screen and (max-width: 574px){
+    .text{
+        margin-top: -100px;
+    }
+    .text>h1{
+        font-size: xx-small;
+    }
+    .text>div>p{
+        font-size: xx-small;
+        margin-top: -10px;
+    }
+    .img{
+        margin-left: -40px;
+    }
+    .fist_main_div{
+        margin-top: -120px;
+    }
+    /* .image_overlay{
+        height: 70%;
+    } */
     .fa-envelope>#email{
         display: none;
         visibility: hidden;
