@@ -36,7 +36,7 @@
             </nav>
             <div class="main">
                 <div class="banner">
-                   <img src="./images/banner.jpg" class="banner_image">
+                   <img src="./images/Banner.jpg" class="banner_image">
                    <div class="board">
                        <img src="./images/board.png" alt="">
                    </div>
@@ -51,8 +51,49 @@
                         ADMISSIONS OPEN FOR GRADE 1 AND GRADE 2, ACADEMIC YEAR: 2021 – 22.
                         </p>
                    </div>
-                   <div><a href="registration.html" class="coming_soon">Enquire Now</a></div>
-                   </div>                   
+                   <div>
+                       <button class="coming_soon" onclick="show()">Enquire Now</button>
+                       <div class="box" id="box">
+                        <button type="button" id="close" onclick="hide()">X</button>
+                           <div class="mainform"> 
+                                <div class="imagepopup">
+                                    <img src="./images/form image .jpg" alt="">
+                                </div>
+                                <div class="form">
+                                    <div class="inform">
+                                        <h1>Admission Enquiry Form</h1>
+                                        <div class="enquiry">
+                                            <form>
+                                                <label for="fname">First name:</label><br>
+                                                <input type="text" id="fname" name="fname"><br>
+                                                <label for="lname" style="display: inline-block; margin-top: 10px;">Email Address:</label><br>
+                                                <input type="text" id="fname" name="lname">
+                                                <div class="mobno">
+                                                    <div>
+                                                        <label for="lname">Phone No:</label><br>
+                                                        <input type="text" id="fname" name="lname">
+                                                    </div>
+                                                    <div>
+                                                        <label for="lname">Select Class:</label><br>
+                                                        <select name="class_name" id="fname">
+                                                            <option value="Class 1" style="width: 100%;">Class 1</option>
+                                                            <option value="Class 2">Class 2</option>
+                                                            <option value="Class 3">Class 3</option>
+                                                            <option value="Class 4">Class 4</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <label for="lname" style="display: inline-block; margin-top: 10px;">Query(optional)</label><br>
+                                                <textarea name="optional" id="fname" cols="30" rows="10" style="height: 150px;"></textarea>
+                                                <span>Max 80 characters</span>
+                                            </form>                            
+                                        </div>
+                                        <button type="submit" form="form1" value="Submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>                  
                 </div>
                 <div class="image_tray">
                     <div class="image_overlay">
@@ -60,8 +101,8 @@
                     </div>
                     <div class="image_overlay">
                         <img src="./images/Group 648.jpg" class="image">
-                        <div class="image_discription">
-                            <span style="border-color: orange;">ACADEMICS</span>
+                        <div class="image_discription" style="border: 4px solid orange;">
+                            <span style="border-color: orange; ">ACADEMICS</span>
                             <ul>
                                 <li>ICSE (Grade 1 to 10)</li>
                                 <li>IGCSE (Grade 7 to 10)</li>
@@ -74,8 +115,8 @@
                     </div>
                     <div class="image_overlay">
                         <img src="./images/Group 650.jpg" class="image">
-                        <div class="image_discription">
-                            <span style="color: rgb(11, 192, 11);">Sports</span>
+                        <div class="image_discription" style="border: 4px solid rgb(83, 182, 96);">
+                            <span style="color: rgb(11, 192, 11); ">Sports</span>
                             <ul>
                                 <li>Swimming</li>
                                 <li>Basketball</li>
@@ -89,8 +130,8 @@
                     </div>
                     <div class="image_overlay">
                         <img src="./images/Group 649.jpg" class="image">
-                        <div class="image_discription">
-                            <span style="color: rgb(103, 103, 250); border-color: rgb(103, 103, 250);">ARTS</span>
+                        <div class="image_discription" style="border: 4px solid rgb(150, 150, 255);">
+                            <span style="color: rgb(103, 103, 250);">ARTS</span>
                             <ul>
                                 <li>VISUAL ARTS</li>
                                 <li>PERFORMING ARTS</li>
@@ -111,6 +152,7 @@
                     <div class="abcd">
                         <div><p>Tenbroeck Academy aims to provide holistic education. This necessarily involves balanced importance to academics, sports and arts. It is one of the first few intitutions in South Banglore to extend the montessori method to 
                            Grade 6.</p></div>
+                           <br>
                         <div><p>We number all forms of intelligence, logical, mathematical, linguistic, spatial, musical,  bodily-kinesthetic, interpersonal, intrapersonal, and natural intelligence. The classrooms are designed to be variant and collaborative. The learning process encourages children to explore, experiment, confer and create. Weaved into the curriculum, in both streams, is an intense program involing arts and sports.</p></div>
                     </div>
                 </div>
@@ -120,7 +162,7 @@
 
             </div>
             <div class="set_as_part">
-                <h3>what</h3>
+                <h3>What</h3>
                 <h2 style="font-family: 'Poppins', sans-serif">set us apart?</h2>
             </div>
             <div class="what">
@@ -130,7 +172,7 @@
                     <img src="./images/Mask Group 9.jpg" alt="Avatar" style="width: 100%;" >
                     <div class="container">
                         
-                        <p style="color:gray;">Focus us on academic excellence</p> 
+                        <p>Focus us on academic excellence</p> 
                     </div>
                     </div>
                     <div class="card mt-5">
@@ -138,7 +180,7 @@
                     <img src="./images/Mask Group 10.jpg" alt="Avatar" style="width: 100%;" >
                     <div class="container">
                         
-                        <p style="color: gray;">Promoting arts and sports as an intergarl part of the curriculum.</p> 
+                        <p>Promoting arts and sports as an intergarl part of the curriculum.</p> 
                     </div>
                     </div>
                     <div class="card mt-5">
@@ -146,7 +188,7 @@
                     <img src="./images/Mask Group 11.jpg" alt="Avatar" style="width: 100%;" >
                     <div class="container">
                          
-                        <p style="color: gray; ">Facilitating the development  of leadership skills and creative potential in our children.</p> 
+                        <p>Facilitating the development  of leadership skills and creative potential in our children.</p> 
                     </div>
                     </div>
                     <div class="card mt-5">
@@ -154,7 +196,7 @@
                     <img src="./images/Mask Group 12.jpg" alt="Avatar" style="width: 100%;" >
                     <div class="container">
                         
-                        <p style="color: gray; ">Helping childern develop an awareness of our heritage, history and value system.</p> 
+                        <p>Helping childern develop an awareness of our heritage, history and value system.</p> 
                     </div>
                     </div>
             </div>
@@ -254,37 +296,37 @@
                     </div> -->
                 </div>
                 <div class="above_footer" >
-                    <img src="images/green1.png" style="width: 100%;">
+                    <img src="./images/green1.png" style="width: 100%;">
                 </div>
         </main>
         <footer>
             <div class="footer">
                 <div class="mail_info">
                     <img src="./images/logo.png" alt=""><br>
-                    <span>For Carrers Apply here</span><br>
-                    <a href="mailto:admissions@tenbroeckacademy.com"><span>carrer@tenbroeckacademy.com</span></a>
+                    <span>For Careers Apply here</span><br>
+                    <a href="mailto:admissions@tenbroeckacademy.com"><span>career@tenbroeckacademy.com</span></a>
                 </div>
                 <div class="follow_us">
                 <div><span>Follow us on</span></div>
                 <div class="social_media">
-                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                    <img src="./images/netclipart.com-ampersand-clipart-1140965.png" alt="">
+                    <img src="./images/linkedin-icon-png-transparent-background-13.png" alt="" id="linkdein">
+                    <img src="./images/639b3dafb544d6f061fcddd2d6686ddb.png" alt="instagram">
                 </div>
                 </div>
                 <div class="address">
                     <i class="fa fa-map-marker" aria-hidden="true"><span>Tenbroeck Academy B.P Wadia Road,<br>&ensp;&ensp; Basavangudi, Banglore - 560004</span> </i><br>
-                    <i class="fa fa-phone" aria-hidden="true"><span>  +91-7760930727</span></i><br>
-                    <i class="fa fa-envelope" aria-hidden="true"><span> admissions@tenbroeckacademy.com</span></i>
+                    <i class="fa fa-phone" aria-hidden="true"><span>  +91-7760930727/ 78298 00200</span></i><br>
+                    <i class="fa fa-envelope" aria-hidden="true" id="mail"><span id="email"> admissions@tenbroeckacademy.com</span></i>
                 </div>
             </div>
             <div class="logo">
                 <img src="./images/logo (2).png" alt="">
+                <span id="middle">|</span>
                 <span>A chimes Montessori Initiative</span>
             </div>
         </footer>
         
-       <!-- <scrip src="" async defer></scrip>-->
+       <script src="./registration.js"></script>
     </body>
 </html>

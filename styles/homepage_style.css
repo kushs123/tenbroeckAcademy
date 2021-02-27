@@ -83,11 +83,11 @@ nav{
 .text>div>p{
     display: block;
     color: white;
-    height: 40px;
+    height: 30px;
     /* background-color: rgba(252, 249, 249, 0.562); */
     background: rgb(204, 204, 204); /* Fallback for older browsers without RGBA-support */
     background: rgba(252, 249, 249, 0.3);
-    line-height: 22px;
+    line-height: 10px;
     width: 100%;
     padding-top: 10px;
     text-align: center;
@@ -130,7 +130,7 @@ nav{
     margin-left:auto;
     margin-right:auto;
     bottom: 1%;
-    top: 40%;
+    top: 25%;
     height: 20%;
 }
 .coming_soon{
@@ -143,6 +143,8 @@ nav{
     line-height: 40px;
     background-color: rgb(118, 207, 95);
     border-radius: 5px;
+    cursor: pointer;
+    animation: 2s ease-in-out;
 }
 /* .banner>a{
     position:absolute;
@@ -199,9 +201,8 @@ nav{
     list-style-position: inside;  
     font-size: 17px;
     float: left;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px;
-    font-family: 'Playfair Display', serif;
 }
 .image_discription>span{
     color: orange;
@@ -225,16 +226,7 @@ nav{
     flex-direction: column;
     align-items: center;
     padding-left: 1px;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;  
-}
-.image_discription:hover{
-    opacity: 1;
-    font-weight: bold;
-    /* box-shadow: 0 0 0 1pt rgb(48, 255, 76); */
-    border: 4px solid rgb(7, 104, 20);
-    padding-right: 10px;
+    justify-content: center; 
 }
 .image{
     position: absolute;
@@ -318,8 +310,6 @@ main{
 .abcd>div>p{
     color: black;
     float: left;
-    text-align: justify;
-    text-justify: inter-word;
     font-size: small;
 }
 .container {
@@ -339,7 +329,7 @@ main{
     
   }
   .what{
-      display: inline-flex;
+      display: flex;
       margin-left: 15%;
       margin-right: 15%;
       width:70%;
@@ -352,9 +342,8 @@ main{
     color: rgba(151, 30, 30, 0.781);
     font-size: 40px !important;
     margin-left: 16%;
-    margin-bottom: 1%;
-    margin-top: -1%;
     font-weight: 700;
+    margin-bottom: 10px;
    }
    .set_as_part>h3{
     color: rgba(151, 30, 30, 0.781);
@@ -365,8 +354,8 @@ main{
    
 }
 .container>p{
-    color: gray;
     padding: 10px;
+    font-family: 'Lato', sans-serif;
     
 }
 
@@ -587,19 +576,21 @@ main{
 
 
 footer{
-    width: 80%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EDEDED;
+}
+.footer{
+    display: flex;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
+    width: 80%;
+    justify-content: space-around;
 }
 .mail_info{
     margin-top: 6px;
@@ -608,11 +599,11 @@ footer{
     text-decoration: none;
 }
 .mail_info>a>span{
-    font-size: small;
+    font-size: medium;
     text-decoration: none;
     font-weight: 80px;
     margin-left: 40px;
-    color: black;
+    color: rgba(151, 30, 30, 0.781);
 }
 .mail_info>span{
     font-size: small;
@@ -628,9 +619,10 @@ footer{
 .follow_us>div>span{
     text-align: center;
     font-size: 16px;
-    margin-left: 42px;
+    margin-left: 60px;
     margin-top: 20px;
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 .social_media>i{
     padding-right: 20px;
@@ -638,8 +630,14 @@ footer{
     opacity: 0.5;
 }
 .social_media{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-top: 28px;
+}
+.social_media>#linkdein{
+    padding: 10px;
+    margin-left: 5px;
 }
 .address{
     margin-top: 28px;
@@ -651,15 +649,21 @@ footer{
 }
 .address>i>span{
     padding-left: 8px;    
-    font-size: small;
-    font-weight: lighter;
+    font-size: medium;
     color: #333333;
+    font-family: 'Lato', sans-serif;
 }
 
 .logo{
-    margin-left: 38%;
-    margin-right: 30%;
-    width: 40%;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.logo>#middle{
+    opacity: 0.3;
+    font-size: medium;
+    margin-left: 10px;
+    margin-right: -20px;
 }
 
 .logo>span{
@@ -668,7 +672,107 @@ footer{
     font-weight: bold;
 }
 
+/* -------------------------------------------------Registration--------------------------------------------------------------------- */
+.box{
+    transition: all 4s ease-in-out;
+    height: 600px;
+    width: 80%;
+    top: 2%;
+    left: 10%;
+    position: fixed;
+    background-color: rgba(50, 50, 50, 0.9);
+    z-index: 999;
+}
+.imagepopup>img{
+    height: 700px;
+}
+.form{
+    width: 80%;
+}
+.inform>h1{
+    color: rgba(151, 30, 30, 0.781);
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    margin-left: 30%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.mainform{
+    display: flex;
+    position: absolute;
+    background:#fff;
+    width: 100%;
+    top: 5%;
+    height: 700px;
+    box-sizing:border-box;    
+}
+.enquiry{
+    display: flex;
+    margin-left: 25%;
+    margin-right: 25%;    
+}
+select{
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(37, 37, 37);
+    box-sizing: border-box;
+    width: 100%;
+    /*  added property  */
+}
+select:hover{
+    cursor: pointer;
+}
+.inform>button{
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    background-color: rgba(61, 226, 96, 0.87);
+    border: none;
+    margin-top: 5px;
+}
+form>span{
+    text-align: right;
+    float: right;
+    font-size: xx-small;
+}
+form{
+    width: 100%;
+}
+.inform>button:hover{
+    cursor: pointer;
+    transition: 0.5 ease-in-out;
+}
+.mobno{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#fname{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    display: inline;
+    border: 1px solid rgb(37, 37, 37);
+    border-radius: 3px;
+}
+#close {
+    cursor:pointer;
+    position:relative;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    float: right;
+    width: 40px;
+    margin-right: 10px;
+    font-size:20px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+  }
 
+/* -----------------------------------------------------------Registration---------------------------------------------------------------------------- */
 @keyframes slider {
     8.33%{
         margin-left: -100%;
@@ -801,6 +905,26 @@ footer{
         visibility: hidden;
     } */
     
+    .inform>button{
+        width: 80px;
+    }
+    .imagepopup>img{
+        height: 700px;
+        width: 90%;
+    }
+    .mobno{
+        flex-direction: column;
+    }
+    .box{
+        height: 700px;
+    }
+    .what{
+        flex-direction: column;
+    }
+    .mt-5{
+        height: 50%;
+        padding-top: 20px;
+    }
     .welcome{
         align-items: center;
         margin-top: 40px;
@@ -875,52 +999,41 @@ footer{
         font-size: small;
     }
     .follow_us{
-        margin-top: 30px;
-    }
-    .address{
-        margin-top: 30px;
-    }
-    .follow_us{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     footer{
         position: relative;
         width: 100%;
-        height: 150px;
+    }
+    .footer{
+        height: 100%;
+        width: 100%;
     }
     .mail_info{
         position: absolute;
-        top: 35%;
+        top: 15%;
         width: 50%;
         float: left;
         left: 0%;
     }
     .follow_us>div>span{
         text-align: center;
-        margin-left: 52px;
         font-size: 13px;
+        float: right;
+        margin-right: 135px;
     }
     .follow_us{
         position: absolute;
         display: block;
-        top: 1%;
-        width: 50%;
+        width: 40%;
         right: 0%;
-    }
-    .follow_us i{
-        margin-top: -2px;
-        display: inline-block;
-        font-size: medium;
-        margin-left: 10px;
-        opacity: 1;
     }
     .address{
         position: absolute;
-        top: 55%;
-        width: 50%;
-        float: right;
+        top: 35%;
+        width: 30%;
         display: block;
-        right: 0%;
+        left: 70%;
     }
     .address>i{
         font-size: medium;
@@ -932,30 +1045,39 @@ footer{
         margin-top: -13px;
     }
     .mail_info>img{
-        height: 70%;
-        width: 70%;
+        height: 50%;
+        width: 50%;
+    }
+    .social_media{
+        width: 40%;
+        height: 40%;
+        margin-top: -3px;
+        float: right;
+        margin-right: 125px;
+    }
+    .social_media>img{
+        width: 50%;
+        height: 50%;
+    }
+    .logo{
+        font-size: x-small;
+        width: 30%;
+        margin: auto;
+        margin-bottom: 0%;
+        margin-top: 25%;
+    }
+    .logo>span{
+        font-size: x-small;
     }
 }
 
-@media screen and (max-width: 604px){
+@media screen and (max-width: 720px){
     body{
         width: 100%;
         font-size: xx-small;
     }
     nav{
         width: 100%;
-    }
-    footer{
-        width: 100%;
-        left:0;
-        right:0;
-        margin-left:auto;
-        margin-right:auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-bottom: 50px;
     }
     #desc{
         color: black;
@@ -966,13 +1088,30 @@ footer{
         font-family: 'Lato', sans-serif;
     }
     .image_tray{
+        margin-top: 1px;
         width: 600%;
-        height: 100px;
+        height: 300px;
         animation: slider infinite 20s 1s;
     }
     /* .main{
         position: relative;
     } */
+    .box{
+        height: 500px;
+    }
+    .enquiry>form{
+        width: 80%;
+    }
+    .form{
+        width: 100%;
+    }
+    .inform>h1{
+        font-size: small;
+    }
+    .imagepopup>img{
+        height: 500px;
+        width: 80%;
+    }
     .main{
         overflow: hidden;
     }
@@ -987,8 +1126,11 @@ footer{
         text-justify: none;
         font-family: 'Lato', sans-serif;
     }
+    .text{
+        margin-top: -80px;
+    }
     .text>div>h1{
-        font-size: small;
+        font-size: x-small;
     }
     .text>div>p{
         font-size: xx-small;
@@ -1010,17 +1152,6 @@ footer{
         height: 100%;
 
     }
-    .mail_info>img{
-        width: 100%;
-        height: 100%;
-    }
-    .mail_info>span{
-        font-size: xx-small;
-        color: black;
-    }
-    .address{
-        margin-top: 28px;
-    }
     .h_links{
         display: flex;
         flex-direction: column;
@@ -1032,21 +1163,6 @@ footer{
         margin-left: none;
         margin-top: 10px;
         margin-left: -1px;
-    }
-    .follow_us>div>span{
-        margin-left: 30%;
-        font-size: xx-small;
-    }
-    .mail_info>span{
-        font-size: xx-small;
-        font-weight: 80px;
-        color: black;
-    }
-    .address>i>span{
-        padding-left: 8px;    
-        font-size: xx-small;
-        font-weight: 80px;
-        color: black;
     }
     .coming_soon{
         margin-top: 10px;
@@ -1065,7 +1181,8 @@ footer{
     } */
 
     .company_logo>img{
-        width: 150px;
+        width: 100px;
+        height: 50px;
     }
     .links{
         flex-direction: column;
@@ -1085,64 +1202,136 @@ footer{
         width: 80px;
         font-size: xx-small;
     }
+    .links>div>span{
+        font-size: x-small;
+    }
     .follow_us{
-        margin-top: 30px;
+        margin-top: 10px;
     }
     footer{
         position: relative;
+        height: 100%;
         width: 100%;
-        height: 150px;
     }
+    /* .footer{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    } */
     .mail_info{
         position: absolute;
-        top: 35%;
+        margin-top: 2%;
         width: 50%;
         float: left;
         left: 0%;
     }
+    .mail_info>img{
+        width: 100%;
+        height: 100%;
+    }
+    .mail_info>span{
+        font-size: xx-small;
+        color: black;
+    }
+    .mail_info>a>span{
+        font-size: x-small;
+    }
     .follow_us>div>span{
         text-align: center;
-        margin-left: 52px;
-        font-size: 13px;
+        font-size: x-small;
+        float: right;
+        margin-right: 100px;
     }
     .follow_us{
         position: absolute;
         display: block;
-        top: 1%;
-        width: 50%;
-        left: 50%;
-        float: right;
-        right: 0%;
-    }
-    .follow_us i{
-        margin-top: -2px;
-        display: inline-block;
-        margin-left: 10px;
-        opacity: 1;
+        width: 40%;
     }
     .address{
         position: absolute;
-        top: 55%;
-        width: 50%;
-        left: 50%;
+        margin-top: 5%;
         float: right;
-        display: block;
-        right: 0%;
+    }
+    .follow_us>div>span{
+        margin-left: 30%;
+        font-size: xx-small;
+    }
+    .mail_info>span{
+        font-size: xx-small;
+        font-weight: 80px;
+        color: black;
+    }
+    .address>i>span{
+        padding-left: 8px;    
+        font-size: xx-small;
+        font-weight: 80px;
+        color: black;
     }
     .address>i{
-        font-size: medium;
+        font-size: x-small;
     }
     .address>i>span{
         display: block;
-        font-size: 10px;
+        font-size: xx-small;
         margin-left: 20px;
-        margin-top: -13px;
     }
     .mail_info>img{
-        height: 70%;
-        width: 70%;
+        margin-left: 10px;
+        height: 50%;
+        width: 50%;
     }
-    .mail_info>span{
-        margin-left: 10%;
+    .social_media{
+        width: 40%;
+        height: 40%;
+        margin-top: -3px;
+        float: right;
+        margin-right: 70px;
+    }
+    .social_media>img{
+        width: 50%;
+        height: 50%;
+    }
+    .logo{
+        font-size: xx-small;
+        width: 20%;
+        margin: 0 auto;
+        margin-top: 25%;
+    }
+    .logo>img{
+        width: 20%;
+    }
+    .logo>span{
+        font-size: xx-small;
+    }
+}
+
+@media screen and (max-width: 574px){
+    .fa-envelope>#email{
+        display: none;
+        visibility: hidden;
+    }
+    .follow_us{
+        margin-top: -10px;
+    }
+    .address{
+        margin-top: -1px;
+    }
+    .follow_us>div>span{
+        margin-right: 30px;
+    }
+    .social_media{
+        margin-right: 40px;
+    }
+    .mail_info{
+        margin-top: -15px;
+    }
+    .address>#mail{
+        display: none;
+        visibility: hidden;
+    }
+    .logo{
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 30%;
     }
 }
