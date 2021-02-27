@@ -196,6 +196,10 @@ nav{
     color: rgb(86, 209, 86);
     font-weight: bolder;
 }
+.image_discription>ul>li{
+    list-style-position: outside;
+    margin-left: 1em;
+}
 .image_discription>ul{
     color: black; 
     list-style-position: inside;  
