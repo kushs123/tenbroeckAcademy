@@ -655,8 +655,10 @@ footer{
 }
 
 .logo{
-    width: 23.5%;
-    margin: 0 auto;
+    width: 50%;
+    align-items: center;
+    margin-left: 38%;
+    margin-right: 25%;
     margin-bottom: 10px;
 }
 .logo>#middle{
@@ -1334,5 +1336,11 @@ form{
         width: 40%;
         margin: 0 auto;
         margin-top: 30%;
+    }
+}
+@media screen and (min-width: 1700px){
+    .logo{
+        width: 100%;
+        margin-left: 41%;
     }
 }
