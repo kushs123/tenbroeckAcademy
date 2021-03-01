@@ -71,16 +71,19 @@
                                                 <div class="mobno">
                                                     <div>
                                                         <label for="lname">Phone No:</label><br>
-                                                        <input type="text" id="fname" name="lname">
+                                                        <input type="text" id="fname" name="lname" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" />
                                                     </div>
                                                     <div>
                                                         <label for="lname">Select Class:</label><br>
-                                                        <select name="class_name" id="fname">
-                                                            <option value="Class 1" style="width: 100%;">Class 1</option>
-                                                            <option value="Class 2">Class 2</option>
-                                                            <option value="Class 3">Class 3</option>
-                                                            <option value="Class 4">Class 4</option>
+                                                        <select name="class_name" id="select" onchange="selectOther(this.value)" style="height:auto">
+                                                            <option value="Grade_1">Grade 1</option>
+                                                            <option value="Grade_2">Grade 2</option>
+                                                            <option value="other">Other</option>
                                                         </select>
+                                                        <div id="other" style="display: none;">
+                                                            <label for="lname">Enter Grade</label><br>
+                                                            <input type="text" name="newGrade" id="newGrade" style='height: 30px; border-radius: 3px;'/>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <label for="lname" style="display: inline-block; margin-top: 10px;">Query(optional)</label><br>
@@ -118,7 +121,7 @@
                         <div class="image_discription" style="border: 4px solid rgb(83, 182, 96);">
                             <span style="color: rgb(11, 192, 11); ">SPORTS</span>
                             <ul style="text-align: left;">
-                                <li>Swimming</li>
+                                <li>Swimming </li>
                                 <li>Basketball</li>
                                 <li>Football</li>
                                 <li>Cricket</li>
@@ -131,7 +134,7 @@
                     <div class="image_overlay">
                         <img src="./images/Group 649.jpg" class="image">
                         <div class="image_discription" style="border: 4px solid rgb(150, 150, 255);">
-                            <span style="color: rgb(103, 103, 250);">ARTS</span>
+                            <span style="color: rgb(103, 103, 250); margin-top: -23px;">ARTS</span>
                             <ul style="text-align: left;">
                                 <li>Visual Arts</li>
                                 <li>Performing Arts</li>
@@ -168,8 +171,8 @@
 
             </div>
             <div class="set_as_part">
-                <h3>what</h3>
-                <h2 style="font-family: 'Poppins', sans-serif">SET US APART?</h2>
+                <h3>What</h3>
+                <h2 style="font-family: 'Poppins', sans-serif">SET'S US APART?</h2>
             </div>
             <div class="what">
                 
@@ -230,7 +233,7 @@
                             <br>
                             STREAM 2: ICSE Syllabus from Grade 1 to 10<br>
                             <br>
-                            <span style="font-weight: bold; color: white;">CURRENTLY ACCEPTING ADMISSIONS FOR GRADE 1 AND GRADE 2 FOR THE YEAR 2021 – 22.</span>
+                            <div style="text-align: center;"><span style="font-weight: bold; color: white; text-align: center;">CURRENTLY ACCEPTING ADMISSIONS FOR GRADE 1 AND GRADE 2 FOR THE YEAR 2021 – 22.</span></div>
                         </p>
                     </div>
                 </div>
@@ -310,14 +313,14 @@
                 <div class="mail_info">
                     <img src="./images/logo.png" alt=""><br>
                     <span>For Careers Apply here</span><br>
-                    <a href="mailto:admissions@tenbroeckacademy.com"><span>career@tenbroeckacademy.com</span></a>
+                    <a href="mailto:admissions@tenbroeckacademy.com"><span>careers@tenbroeckacademy.com</span></a>
                 </div>
                 <div class="follow_us">
                 <div><span>Follow us on</span></div>
                 <div class="social_media">
-                    <img src="./images/netclipart.com-ampersand-clipart-1140965.png" alt="">
-                    <img src="./images/linkedin-icon-png-transparent-background-13.png" alt="" id="linkdein">
-                    <img src="./images/639b3dafb544d6f061fcddd2d6686ddb.png" alt="instagram">
+                    <a href="https://www.facebook.com/tenbroeckacademy-101045198530029"><img src="./images/netclipart.com-ampersand-clipart-1140965.png" alt=""></a>
+                    <a href=""><img src="./images/linkedin-icon-png-transparent-background-13.png" alt="" id="linkdein"></a>
+                    <a href="https://instagram.com/tenbroeckacademy?igshid=8dz4werxai2g"><img src="./images/639b3dafb544d6f061fcddd2d6686ddb.png" alt="instagram"></a>
                 </div>
                 </div>
                 <div class="address">
@@ -329,7 +332,7 @@
             <div class="logo">
                 <img src="./images/logo (2).png" alt="">
                 <span id="middle">|</span>
-                <span>A chimes Montessori Initiative</span>
+                <span>A Chimes Montessori Initiative</span>
             </div>
         </footer>
         
