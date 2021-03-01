@@ -431,7 +431,7 @@ main{
 .change{
     width: 100%;
     background-color: rgba(122, 22, 22, 0.781);
-    margin-top: 50px;
+    margin-top: 100px;
 }
 .bottom_content{
     display: flex;
@@ -567,7 +567,7 @@ main{
 }
 .above_footer>img{
     padding-right: 2px;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -589,13 +589,13 @@ footer{
     margin-left:auto;
     margin-right:auto;
     width: 80%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .mail_info{
     margin-top: 6px;
+    width: 34%;
 }
 .mail_info>div{
-    margin-left: 10px;
 }
 .mail_info>div>div>a{
     text-decoration: none;
@@ -616,12 +616,12 @@ footer{
 }
 .follow_us{
     margin-top: 28px;
+    margin-left: -80px;
 }
 
 .follow_us>div>span{
     text-align: center;
     font-size: 16px;
-    margin-left: 60px;
     margin-top: 20px;
     color: black;
     font-family: 'Lato', sans-serif;
@@ -631,7 +631,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     margin-top: 28px;
-    margin-left: 15px;
+    width: 40%;
 }
 .social_media>a>#instagram{
     margin-left: 15px;
@@ -641,15 +641,22 @@ footer{
     margin-left: 35px;
 }
 .address{
+    display: inline-block;
+    align-items: center;
     margin-top: 28px;
+    width: 30%;
 }
 .address>i{
-    padding-top: 6px;
+    display: inline-block;
     color: black;
     opacity: 0.9;
+    padding-bottom: 8px;
+    padding-right: 5px;
 }
 .address>i>span{
-    padding-left: 8px;    
+    display: inline-block;
+    padding-left: 20px; 
+    margin-top: -30px;
     font-size: medium;
     color: #333333;
     font-family: 'Lato', sans-serif;
@@ -658,7 +665,7 @@ footer{
 .logo{
     width: 50%;
     align-items: center;
-    margin-left: 40%;
+    margin-left: 37%;
     margin-right: 25%;
     margin-bottom: 10px;
 }
@@ -836,6 +843,7 @@ form{
     }
     .text>div>h1{
         font-size: small;
+        width: 65%;
     }
     .text>div>p{
         font-size: xx-small;
@@ -917,7 +925,9 @@ form{
         height: 0%;
         visibility: hidden;
     } */
-    
+    .change{
+        margin-top: 80px;
+    }
     .inform>button{
         width: 80px;
     }
@@ -1067,6 +1077,7 @@ form{
         display: block;
         font-size: small;
         margin-left: 10px;
+        line-height: 15px;
         margin-top: -13px;
     }
     .mail_info>div>img{
@@ -1191,7 +1202,7 @@ form{
         margin-top: -120px;
     }
     .img>img{
-        margin-top: 20px;
+        margin-top: 30px;
         height: 200px;
     }
     .set_as_part{
@@ -1248,7 +1259,9 @@ form{
     /* .company_logo{
         width: 10%;
     } */
-
+    .above_footer>img{
+        margin-top: 50px;
+    }
     .company_logo>img{
         width: 90%;
     }
@@ -1395,6 +1408,9 @@ form{
     .mainform{
         height: 120%;
     }
+    .change{
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 574px){
@@ -1451,7 +1467,7 @@ form{
         margin-top: 10px;
     }
     .address{
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .social_media>a>img{
         width: 20px;
@@ -1466,7 +1482,8 @@ form{
     }
     .address>i>span{
         font-size: 8px;
-        margin-left: 5px;
+        margin-left: 5px;;
+        line-height: 11px;
     }
     .address>#mail{
         display: none;
@@ -1484,7 +1501,7 @@ form{
         width: 50%;
         margin-left: 30%;
         margin-right: 25%;
-        margin-top: 120px;
+        margin-top: 130px;
     }
     .change{
         margin-top: 50px;
@@ -1494,5 +1511,21 @@ form{
     .logo{
         width: 100%;
         margin-left: 41%;
+    }
+}
+@media screen and (max-width: 370px){
+    .logo{
+        width: 60%;
+        margin-left: 25%;
+        margin-right: 20%;
+        margin-top: 130px;
+    }
+    .address>i>span{
+        font-size: 8px;
+        margin-left: 5px;;
+        line-height: 9px;
+    }
+    .address{
+        margin-top: 10px;
     }
 }
