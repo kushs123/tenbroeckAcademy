@@ -812,7 +812,7 @@ form{
     } */
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1200px) {
     body{
         font-size: 16px;
         margin: 0;
@@ -847,6 +847,9 @@ form{
     }
     .img{
         width: 50%;
+    }
+    .img>img{
+        margin-top: -15px;
     }
     header{
         width: 100%;
@@ -1046,7 +1049,7 @@ form{
     }
     .address>i>span{
         display: block;
-        font-size: 10px;
+        font-size: small;
         margin-left: 20px;
         margin-top: -13px;
     }
@@ -1161,6 +1164,7 @@ form{
     }
     .img>img{
         height: 200px;
+        margin-top: 70px;
     }
     .set_as_part{
         text-align: center;
