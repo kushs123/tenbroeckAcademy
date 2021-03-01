@@ -431,7 +431,7 @@ main{
 .change{
     width: 100%;
     background-color: rgba(122, 22, 22, 0.781);
-    margin-top: 150px;
+    margin-top: 50px;
 }
 .bottom_content{
     display: flex;
