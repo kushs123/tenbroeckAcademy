@@ -291,7 +291,6 @@ main{
 }
 .img>img{
     margin-top: 75px;
-    margin-left: 30px;
     width: 100%;
     height: 300px;
 }
@@ -465,7 +464,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 .facilities>div>h3{
     color: rgba(151, 30, 30, 0.781);
@@ -486,7 +485,6 @@ main{
 
 .facilties_grid{
     display: flex;
-    margin-top: 40px;
     width: 80%;
     left:0;
     right:0;
@@ -523,7 +521,6 @@ main{
     display: flex;
     border-radius: 5px;
     margin-top: 22px;
-    margin-bottom: 20px;
 }
 .grid-2{
     box-sizing: border-box;
@@ -552,25 +549,25 @@ main{
     font-size: small;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 15px;
+    margin-top: 7px;
     font-size: 16px;
 }
 
-.first_column{
+.first-column{
     display: flex;
     flex-direction: column;
 }
-.second_column{   
+.second-column{   
     display: flex;
     flex-direction: column;
 }
-.thrid_column{   
+.thrid-column{   
     display: flex;
     flex-direction: column;
 }
 .above_footer>img{
     padding-right: 2px;
-    margin-top: 80px;
+    margin-top: 50px;
     width: 100%;
 }
 
@@ -597,21 +594,24 @@ footer{
 .mail_info{
     margin-top: 6px;
 }
-.mail_info>a{
+.mail_info>div{
+    margin-left: 10px;
+}
+.mail_info>div>div>a{
     text-decoration: none;
 }
-.mail_info>a>span{
+.mail_info>div>div>a>span{
     font-size: medium;
     text-decoration: none;
+    margin-left: 35px;
     font-weight: 80px;
-    margin-left: 40px;
     color: rgba(151, 30, 30, 0.781);
 }
-.mail_info>span{
+.mail_info>div>div>span{
     font-size: small;
     text-decoration: none;
+    margin-left: 35px;
     font-weight: 80px;
-    margin-left: 40px;
     color: black;
 }
 .follow_us{
@@ -628,9 +628,17 @@ footer{
 }
 .social_media{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-top: 28px;
+    margin-left: 15px;
+}
+.social_media>a>#instagram{
+    margin-left: 15px;
+}
+.social_media>a>#facebook{
+    border-radius: 25px;
+    margin-left: 35px;
 }
 .address{
     margin-top: 28px;
@@ -650,7 +658,7 @@ footer{
 .logo{
     width: 50%;
     align-items: center;
-    margin-left: 38%;
+    margin-left: 40%;
     margin-right: 25%;
     margin-bottom: 10px;
 }
@@ -824,7 +832,7 @@ form{
         margin-right: 0%;
     }
     .banner>img{
-        height: 400px;
+        height: 350px;
     }
     .text>div>h1{
         font-size: small;
@@ -848,7 +856,9 @@ form{
         width: 50%;
     }
     .img>img{
-        margin-top: -15px;
+        margin-top: 5px;
+        width: 100%;
+        height: 100%;
     }
     header{
         width: 100%;
@@ -1024,11 +1034,17 @@ form{
         float: left;
         left: 0%;
     }
+    .mail_info>div>div>a>span{
+        margin-left: 20px;
+    }
+    .mail_info>div>div>span{
+        margin-left: 20px;
+    }
     .follow_us>div>span{
         text-align: center;
         font-size: 13px;
         float: right;
-        margin-right: 30%;
+        margin-right: 25%;
         margin-bottom: 10px;
     }
     .follow_us{
@@ -1050,10 +1066,10 @@ form{
     .address>i>span{
         display: block;
         font-size: small;
-        margin-left: 20px;
+        margin-left: 10px;
         margin-top: -13px;
     }
-    .mail_info>img{
+    .mail_info>div>img{
         height: 50%;
         width: 50%;
     }
@@ -1062,7 +1078,7 @@ form{
         height: 40%;
         margin-top: -3px;
         float: right;
-        margin-right: 125px;
+        margin-right: 70px;
     }
     .social_media>img{
         width: 100%;
@@ -1076,6 +1092,15 @@ form{
     }
     .logo>span{
         font-size: x-small;
+    }
+    .mobno{
+        margin-top: 10px;
+    }
+    .dropdown{
+        margin-top: 10px;
+    }
+    .dropdown>select{
+        margin-top: 10px;
     }
 }
 
@@ -1121,7 +1146,7 @@ form{
         width: 80%;
     }
     .banner>img{
-        height: 250px;
+        height: 200px;
     }
     .main{
         overflow: hidden;
@@ -1166,6 +1191,7 @@ form{
         margin-top: -120px;
     }
     .img>img{
+        margin-top: 20px;
         height: 200px;
     }
     .set_as_part{
@@ -1267,16 +1293,18 @@ form{
         float: left;
         left: 0%;
     }
-    .mail_info>img{
+    .mail_info>div>img{
         width: 100%;
         height: 100%;
     }
-    .mail_info>span{
+    .mail_info>div>div>span{
         font-size: xx-small;
         color: black;
+        margin-left: 15px;
     }
-    .mail_info>a>span{
+    .mail_info>div>div>a>span{
         font-size: x-small;
+        margin-left: 15px;
     }
     .follow_us>div>span{
         text-align: center;
@@ -1296,7 +1324,7 @@ form{
     .follow_us>div>span{
         font-size: xx-small;
     }
-    .mail_info>span{
+    .mail_info>div>div>span{
         font-size: xx-small;
         font-weight: 80px;
         color: black;
@@ -1315,29 +1343,27 @@ form{
         font-size: xx-small;
         margin-left: 20px;
     }
-    .mail_info>img{
-        margin-left: 10px;
+    .mail_info>div>img{
         height: 50%;
         width: 50%;
         margin-top: 10px;
     }
     .social_media{
-        width: 70%;
-        height: 70%;
         float: right;
-        margin-right: 40px;
+        margin-right: 80px;
     }
-
+    .social_media>a>#instagram{
+        margin-left: 15px;
+    }
     .social_media>a>img{
-        width: 100%;
-        height: 100%;
         margin-left: 25px;
         margin-top: 10px;
     }
     .logo{
         font-size: xx-small;
-        width: 40%;
-        margin: 0 auto;
+        width: 50%;
+        margin-left: 30%;
+        margin-right: 25%;
         margin-top: 150px;
     }
     .logo>img{
@@ -1345,6 +1371,29 @@ form{
     }
     .logo>span{
         font-size: xx-small;
+    }
+    .imagepopup{
+        width: 40%;
+    }
+    .imagepopup>img{
+        width: 140%;
+    }
+    .enquiry{
+        width: 80%;
+    }
+    .mobno{
+        margin-top: 10px;
+    }
+    .dropdown{
+        margin-top: 10px;
+    }
+    .dropdown>select{
+        margin-top: 10px;
+    }
+    .inform>h1{
+    }
+    .mainform{
+        height: 120%;
     }
 }
 
@@ -1354,6 +1403,19 @@ form{
     }
     footer{
         height: 100%;
+    }
+    .imagepopup{
+        width: 40%;
+    }
+    .imagepopup>img{
+        width: 140%;
+    }
+    .enquiry{
+        width: 80%;
+        margin-left: 20%;
+    }
+    .mainform{
+        height: 120%;
     }
     .text{
         margin-top: -100px;
@@ -1366,7 +1428,7 @@ form{
         margin-top: -10px;
     }
     .fist_main_div{
-        margin-top: -120px;
+        height: 40%;
     }
     /* .image_overlay{
         height: 70%;
@@ -1379,16 +1441,25 @@ form{
         margin-top: -10px;
     }
     .follow_us>div>span{
-        margin-right: 30%;
+        margin-right: 10%;
+        width: 60%;
     }
     .social_media{
-        margin-right: 40px;
+        margin-right: 48px;
     }
     .mail_info{
-        margin-top: -15px;
+        margin-top: 10px;
     }
     .address{
-        margin-top: 20px;
+        margin-top: 10px;
+    }
+    .social_media>a>img{
+        width: 20px;
+        height: 18px;
+    }
+    .social_media>a>#instagram{
+        width: 30px;
+        height: 20px;
     }
     .social_media>a{
         margin-top: -10px;
@@ -1401,10 +1472,22 @@ form{
         display: none;
         visibility: hidden;
     }
+    .banner>img{
+        height:180px
+    }
+    .img>img{
+        width: 120%;
+        height: 130%;
+        margin-left: -10px;
+    }
     .logo{
         width: 50%;
-        margin: 0 auto;
+        margin-left: 30%;
+        margin-right: 25%;
         margin-top: 120px;
+    }
+    .change{
+        margin-top: 50px;
     }
 }
 @media screen and (min-width: 1700px){
