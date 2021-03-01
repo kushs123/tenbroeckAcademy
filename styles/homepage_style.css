@@ -1453,6 +1453,9 @@ form{
         display: none;
         visibility: hidden;
     }
+    .above_footer>img{
+        height: 130px;
+    }
     .follow_us{
         margin-top: -10px;
     }
@@ -1498,10 +1501,13 @@ form{
         margin-left: -10px;
     }
     .logo{
-        width: 50%;
+        width: 60%;
         margin-left: 30%;
         margin-right: 25%;
         margin-top: 130px;
+    }
+    .logo>img{
+        width: 30%;
     }
     .change{
         margin-top: 50px;
@@ -1515,7 +1521,7 @@ form{
 }
 @media screen and (max-width: 370px){
     .logo{
-        width: 60%;
+        width: 70%;
         margin-left: 25%;
         margin-right: 20%;
         margin-top: 130px;
