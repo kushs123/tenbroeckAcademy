@@ -1459,8 +1459,6 @@ form{
     .mainform{
         height: 120%;
     }
-    .text{
-    }
     .text>h1{
         font-size: xx-small;
     }
@@ -1482,7 +1480,7 @@ form{
         height: 90px;
     }
     .follow_us{
-        margin-top: -10px;
+        margin-top: -2px;
     }
     .follow_us>div>span{
         margin-right: 10%;
