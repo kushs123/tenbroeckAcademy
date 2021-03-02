@@ -105,7 +105,7 @@ nav{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 50px; 
-    width: 75%;
+    width: 68%;
     color: white;
     margin-bottom: 15px;
     margin-top: 45px;
@@ -216,6 +216,7 @@ nav{
 .image_discription>span{
     color: orange;
     font-size: 35px;
+    font-weight: 600;
     font-family: 'Playfair Display', serif;
 }
 .image_discription{
@@ -226,7 +227,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 170px;
+    height: 220px;
     background: rgba(255, 255, 255, 0.6);
     color: rgba(0, 0, 0, 0.884);
     font-family: 'Lato', sans-serif;
@@ -239,7 +240,7 @@ nav{
 .image{
     position: absolute;
     width: 100%;
-    height: 170px;
+    height: 220px;
 }
 
 /* Media Queries: Tablet Landscape */
@@ -549,7 +550,8 @@ main{
     font-size: small;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 7px;
+    margin-top: 3%;
+    margin-bottom: auto;
     font-size: 16px;
 }
 
@@ -839,11 +841,12 @@ form{
         margin-right: 0%;
     }
     .banner>img{
-        height: 350px;
+        height: 320px;
     }
     .text>div>h1{
+        margin-top: 5px;
         font-size: small;
-        width: 65%;
+        width: 60%;
     }
     .text>div>p{
         font-size: xx-small;
@@ -862,6 +865,9 @@ form{
     }
     .img{
         width: 50%;
+    }
+    #desc{
+        margin-top: 5%;
     }
     .img>img{
         margin-top: 5px;
@@ -895,6 +901,12 @@ form{
         overflow: hidden;
         margin-top: -10px;
     }
+    /* .image{
+        height: 200px;
+    }
+    .image_discription{
+        height: 200px;
+    } */
     #desc{
         color: black;
         font-size: small;
@@ -1137,6 +1149,12 @@ form{
         height: 300px;
         animation: slider infinite 15s 8s;
     }
+    .image{
+        height: 140px;
+    }
+    .image_discription{
+        height: 140px;
+    }
     /* .main{
         position: relative;
     } */
@@ -1157,7 +1175,7 @@ form{
         width: 80%;
     }
     .banner>img{
-        height: 200px;
+        height: 180px;
     }
     .main{
         overflow: hidden;
@@ -1178,6 +1196,7 @@ form{
     }
     .text>div>h1{
         font-size: x-small;
+        margin-top: 5px;
     }
     .text>div>p{
         font-size: xx-small;
@@ -1261,6 +1280,7 @@ form{
     } */
     .above_footer>img{
         margin-top: 50px;
+        height: 120px;
     }
     .company_logo>img{
         width: 90%;
@@ -1420,6 +1440,12 @@ form{
     footer{
         height: 100%;
     }
+    .image{
+        height: 160px;
+    }
+    .image_discription{
+        height: 160px;
+    }
     .imagepopup{
         width: 40%;
     }
@@ -1434,7 +1460,6 @@ form{
         height: 120%;
     }
     .text{
-        margin-top: -100px;
     }
     .text>h1{
         font-size: xx-small;
@@ -1454,7 +1479,7 @@ form{
         visibility: hidden;
     }
     .above_footer>img{
-        height: 100px;
+        height: 90px;
     }
     .follow_us{
         margin-top: -10px;
@@ -1468,6 +1493,9 @@ form{
     }
     .mail_info{
         margin-top: 10px;
+    }
+    .mail_info>div>img{
+        width: 120px;
     }
     .address{
         margin-top: 15px;
@@ -1493,7 +1521,7 @@ form{
         visibility: hidden;
     }
     .banner>img{
-        height:180px
+        height:160px
     }
     .img>img{
         width: 120%;
@@ -1508,9 +1536,22 @@ form{
     }
     .logo>img{
         width: 30%;
+        margin-left: 45px;
+    }
+    .logo>#middle::after{
+        content: "\a";
+        white-space: pre;
+    }
+    .logo>#middle{
+        visibility: hidden;
     }
     .change{
         margin-top: 50px;
+    }
+
+    .company_logo>img{
+        width: 100px;
+        height: 40px;
     }
 }
 @media screen and (min-width: 1700px){
@@ -1533,5 +1574,17 @@ form{
     }
     .address{
         margin-top: 10px;
+    }
+    .links>div>span{
+        font-size: 8px;
+    }
+    .links .call_us{
+        font-size: 8px;
+    }
+    .links .for_admission{
+        font-size: 8px;
+    }
+    .links>div>a>span{
+        font-size: 6px;
     }
 }
