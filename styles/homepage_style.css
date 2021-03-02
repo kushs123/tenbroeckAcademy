@@ -787,23 +787,26 @@ form{
 
 /* -----------------------------------------------------------Registration---------------------------------------------------------------------------- */
 @keyframes slider {
+    0%{
+        margin-left: 0%;
+    }
     16%{
-        margin-left: -100%;
+        margin-left: 0%;
     }
     34%{
         margin-left: -100%;
     }
     50%{
-        margin-left: -200%;
+        margin-left: -100%;
     }
     67%{
         margin-left: -200%;
     }
     84%{
-        margin-left: -300%;
+        margin-left: -200%;
     }
     100%{
-        margin-left: -300%;
+        margin-left: 0%;
     }
     /* 58.31%{
         margin-left: -400%;
@@ -1148,6 +1151,9 @@ form{
         width: 300%;
         height: 300px;
         animation: slider infinite 15s 8s;
+    }
+    .image_tray:hover{
+        animation-play-state:paused;
     }
     .image{
         height: 140px;
@@ -1546,9 +1552,13 @@ form{
     .change{
         margin-top: 50px;
     }
-
+    /* .company_logo{
+        background-image: url("../images/logooooo\ copy.png");
+        width: 80px;
+        height: 25px;
+    } */
     .company_logo>img{
-        width: 100px;
+        width: 120px;
         height: 40px;
     }
 }
@@ -1558,7 +1568,7 @@ form{
         margin-left: 41%;
     }
 }
-@media screen and (max-width: 370px){
+@media screen and (max-width: 374px){
     .logo{
         width: 70%;
         margin-left: 25%;
@@ -1569,6 +1579,10 @@ form{
         font-size: 8px;
         margin-left: 5px;;
         line-height: 9px;
+    }
+    .company_logo>img{
+        width: 90px;
+        height: 30px;
     }
     .address{
         margin-top: 10px;
