@@ -707,7 +707,11 @@ footer{
     color: rgba(151, 30, 30, 0.781);
     font-family: 'Lato', sans-serif;
     font-size: 30px;
-    margin-left: 30%;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 10%;
     margin-bottom: 10%;
 }
@@ -959,7 +963,6 @@ form{
     .inform{
         height: 100px;
     }
-    
     /* .form{
         height: 80%;
     }
@@ -1195,7 +1198,9 @@ form{
         width: 100%;
     }
     .inform>h1{
-        font-size: small;
+        font-size: large;
+        text-align: center;
+        margin-left: 30px;
     }
     .imagepopup>img{
         height: 100%;
@@ -1576,6 +1581,11 @@ form{
     }
     .logo>#middle{
         visibility: hidden;
+    }
+    .inform>h1{
+        font-size: small;
+        text-align: center;
+        margin-left: 30px;
     }
     .change{
         margin-top: 50px;
