@@ -298,6 +298,7 @@ main{
 .abcd{
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 }
 .abc>h2{
     color: rgba(151, 30, 30, 0.781);
@@ -946,6 +947,26 @@ form{
     .inform>button{
         width: 80px;
     }
+    .mainform{
+        overflow: scroll;
+    }
+    .form{
+        height: 80%;
+    }
+    .imagepopup{
+        width: 40%;
+    }
+    .inform{
+        height: 100px;
+    }
+    
+    /* .form{
+        height: 80%;
+    }
+    .imagepopup>img{
+        width: 140%;
+        height: 90%;
+    } */
     .imagepopup>img{
         height: 700px;
         width: 90%;
@@ -1177,7 +1198,7 @@ form{
         font-size: small;
     }
     .imagepopup>img{
-        height: 500px;
+        height: 100%;
         width: 80%;
     }
     .banner>img{
@@ -1234,25 +1255,28 @@ form{
         text-align: center;
     }
     .setuspart .set_as_part>h2{
-        font-size: xx-large;
+        font-size: x-large;
     }
     .setuspart .set_as_part>h3{
         font-size: medium;
     }
     .abc>h3{
-        font-size: small;
+        font-size: medium;
     }
     .abc>h2{
-        font-size: xx-large;
+        font-size: x-large;
     }
     .curriculum>div>h2{
-        font-size: xx-large;
+        font-size: x-large;
+        font-weight: bolder;
     }
     .curriculum>div>h3{
         font-size: medium;
     }
     .facilities>div>h3{
         font-size: medium;
+        font-weight: 600;
+        color: rgba(151, 30, 30, 0.700);
     }
     .facilities>div>h2{
         font-size: x-large;
@@ -1455,8 +1479,12 @@ form{
     .imagepopup{
         width: 40%;
     }
+    .form{
+        height: 80%;
+    }
     .imagepopup>img{
         width: 140%;
+        height: 90%;
     }
     .enquiry{
         width: 80%;
