@@ -74,15 +74,15 @@
                                                         <input type="text" id="fname" name="lname" maxlength="10" pattern="\d{10}" title="Please enter exactly 10 digits" />
                                                     </div>
                                                     <div class="dropdown">
-                                                        <label for="lname">Select Class:</label><br>
-                                                        <select name="class_name" id="select" onchange="selectOther(this.value)" style="height:auto">
-                                                            <option value="Grade_1">Grade 1</option>
+                                                        <label for="lname" style="margin-bottom: 20px;">Select Class:</label><br>
+                                                        <select name="class_name" id="select" onchange="selectOther(this.value)" style="height:30px; margin-top: 10px;">
+                                                            <option value="Grade_1" style="">Grade 1</option>
                                                             <option value="Grade_2">Grade 2</option>
                                                             <option value="other">Other</option>
                                                         </select>
-                                                        <div id="other" style="display: none;">
+                                                        <div id="other" style="display: none; margin-top: 10px;">
                                                             <label for="lname">Enter Grade</label><br>
-                                                            <input type="text" name="newGrade" id="newGrade" style='height: 30px; border-radius: 3px;'/>
+                                                            <input type="text" name="newGrade" id="newGrade" style='height: 30px; border-radius: 3px; margin-top: 10px;'/>
                                                         </div>
                                                     </div>
                                                 </div>
